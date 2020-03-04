@@ -1,1 +1,117 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Stylish WebSite</title><style>#root,body,html{width:100%;height:100%}.loader-box{width:100%;height:100%;color:#0ae;font-size:14px;display:flex;justify-content:center;align-items:center}.loader-box div:before{content:'';margin-bottom:10px;display:block;width:264px;height:204px;background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579066369424&di=42f17f5f3049c52e0809fca44ae7b26f&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F26e4973a351b57767a14a054904e88b17834c76e14286-JZQz79_fw658) no-repeat;background-size:100% 100%}</style><link href="/static/css/2.ff8bd605.chunk.css" rel="stylesheet"><link href="/static/css/main.cbc63b0d.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="loader-box"><div>页面初次加载可能较慢，请耐心等待。。。</div></div></div><script>!function(a){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],p=0,l=[];p<n.length;p++)t=n[p],Object.prototype.hasOwnProperty.call(i,t)&&i[t]&&l.push(i[t][0]),i[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(a[r]=o[r]);for(s&&s(e);l.length;)l.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==i[u]&&(n=!1)}n&&(c.splice(r--,1),e=p(p.s=t[0]))}return e}var t={},i={1:0},c=[];function p(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return a[e].call(r.exports,r,r.exports,p),r.l=!0,r.exports}p.m=a,p.c=t,p.d=function(e,r,t){p.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},p.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},p.t=function(r,e){if(1&e&&(r=p(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(p.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)p.d(t,n,function(e){return r[e]}.bind(null,n));return t},p.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return p.d(r,"a",r),r},p.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},p.p="/";var r=this["webpackJsonpmy-app"]=this["webpackJsonpmy-app"]||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;f()}([])</script><script src="/static/js/2.93fd5e44.chunk.js"></script><script src="/static/js/main.f3914f89.chunk.js"></script></body></html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>贾斯纳的猫:一个适于四岁儿童益智游戏</title>
+    <link href="cats-of-jasnah.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="back" onclick="set_level(Math.max(0,cur_level-1))">&larr;</div>
+    <div class="forward" onclick="set_level(Math.min(7,cur_level+1))">
+      &rarr;
+    </div>
+    <h1 onclick="window.location.reload()">贾斯纳的猫</h1>
+
+    <div class="level-display">关卡: <span class="level-number"></span></div>
+
+    <div class="number-bar">
+      <div class="number-line">
+        <button class="coj-btn" onclick="submit(0)" type="button">初出茅庐</button>
+        <button class="coj-btn" onclick="submit(1)" type="button">小试牛刀</button>
+        <button class="coj-btn" onclick="submit(2)" type="button">崭露头角</button>
+        <button class="coj-btn" onclick="submit(3)" type="button">得心应手</button>
+        <button class="coj-btn" onclick="submit(4)" type="button">大杀四方</button>
+        <button class="coj-btn" onclick="submit(5)" type="button">随心所欲</button>
+        <button class="coj-btn" onclick="submit(6)" type="button">无欲无求</button>
+        <button class="coj-btn" onclick="submit(7)" type="button">天下无敌</button>
+        <button class="coj-btn" onclick="submit(8)" type="button">得道升仙</button>
+        <button class="coj-btn" onclick="submit(9)" type="button">不老传说</button>
+      </div>
+      <div class="desc">
+        要回答问题，请轻触上面的数字或使用键盘。
+      </div>
+    </div>
+    <p></p>
+
+    <span id="forkongithub"
+      ><a href="https://github.com/countable/cats-of-jasnah"
+        >Fork me on GitHub</a
+      ></span
+    >
+
+    <div class="instructions">
+      <b>游戏介绍:</b><br /><br />
+
+      适于儿童玩的逻辑游戏。
+      <b
+        >警告：游戏会大声朗读题目（因为小孩子有可能看不懂问题描述），所以请检查你的设备音量。
+        </b
+      >
+      选择一个关卡<br /><br />
+      <ul>
+        <li onclick="set_level(0)">0. 计数</li>
+        <li onclick="set_level(1)">1. 类别</li>
+        <li onclick="set_level(2)">2. 对立面</li>
+        <li onclick="set_level(3)">3. 组合</li>
+        <li onclick="set_level(4)">4. 连续</li>
+        <li onclick="set_level(5)">5. 不止对立和连续</li>
+        <li onclick="set_level(6)">6. 三种组合</li>
+        <li onclick="set_level(7)">7. 三连词</li>
+      </ul>
+    </div>
+    <br />
+    <svg class="hidden" viewbox="0 0 160 140">
+      <ellipse class="face" cx="70" cy="95" ry="45" rx="55" />
+      <ellipse cx="45" cy="90" rx="5" ry="7" fill="black" />
+      <ellipse cx="95" cy="90" rx="5" ry="7" stroke="black" fill="black" />
+
+      <g id="whiskers" class="whiskers">
+        <line x1="105" y1="100" x2="135" y2="90" style="stroke: black;" />
+        <line x1="105" y1="100" x2="135" y2="110" style="stroke: black;" />
+      </g>
+      <use xlink:href="#whiskers" transform="scale(-1 1) translate(-140 0)" />
+      <!-- ears -->
+      <g id="earz" class="ears">
+        <polyline
+          points="108 62,  103 40,  80 51"
+          style="stroke: none; fill: #ff88dd;"
+        />
+      </g>
+      <use xlink:href="#earz" transform="scale(-1 1) translate(-140 0)" />
+
+      <!-- mouth -->
+      <!--<polyline points="35 110, 45 120, 95 120, 105, 110"
+    style="stroke: black; fill: none;" />-->
+
+      <path
+        class="frown"
+        d="M 50 110 C 70 90, 80 90, 90 110"
+        stroke="black"
+        fill="transparent"
+      />
+      <path
+        class="smile"
+        d="M 50 110 C 70 120, 80 120, 90 110"
+        stroke="black"
+        fill="transparent"
+      />
+      <path
+        class="mouth"
+        d="M 55 110 C 70 115, 80 115, 85 110"
+        stroke="black"
+        fill="transparent"
+      />
+
+      <!-- nose -->
+      <!--<path d="M 75 90 L 65 90 A 5 10 0  0 0 75 90"
+   style="stroke: #ff88dd; fill: #ffcccc"/>-->
+    </svg>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./cats-of-jasnah.js"></script>
+  </body>
+</html>
