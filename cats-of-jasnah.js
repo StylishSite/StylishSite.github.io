@@ -86,23 +86,12 @@ const permute_atts = function() {
 const chance_for_level = function(level) {
   return 0.5 + Math.random() * (level / 40) // increased match chance as levels progress, sometimes.
 }
-const speak = function(str) {
-  //var request=  new URLRequest()
-  $('p').text(str);
-  var url = "http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&text=" + encodeURI(str);        // baidu
-  //url = "http://translate.google.cn/translate_tts?ie=UTF-8&tl=zh-CN&total=1&idx=0&textlen=19&prev=input&q=" + encodeURI(str); // google
-  //request.url = encodeURI(url);
-  // request.contentType = "audio/mp3"; // for baidu
-  //request.contentType = "audio/mpeg"; // for google
 
-　　var n = new Audio(url);
-
-　　 n.src = url;
-
-　　 n.play();
-　　 // $("...").play();
-　　// var sound = new Sound(request);
-　　// sound.play();
+const speak = function(text, opts) {
+  opts = opts || {}
+  $('p').text(text);
+  responsiveVoice.enableEstimationTimeout = false;
+  responsiveVoice.speak(text, 'Chinese Female', opts)
 }
 
 var make_cats = function() {
