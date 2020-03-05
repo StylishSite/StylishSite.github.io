@@ -7,7 +7,7 @@ const CHINESE_NAME = {
   'yellow': '黄色的',
   'bouncing': '弹跳的',
   'spinning': '转圈圈的',
-  'ducks': '鸭嘴',
+  'ducks': '鸭嘴形状的',
 }
 const ALL_ATTS = COLOR_ATTS.concat(MOTION_ATTS).concat(ANIMAL_ATTS)
 let ATTS
