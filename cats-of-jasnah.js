@@ -98,14 +98,14 @@ var make_cats = function() {
   set_avail_atts()
   permute_atts()
   is_reversed = Math.random() < 0.5
-  let text = '这里有'
+  let text = '这里'
   const keys = Object.keys(cur_atts)
   const prefix_pos = get_level_num_adjectives(cur_level, keys)
   const prefix_keys = keys.slice(0, prefix_pos)
 
   postfix_keys = keys.slice(prefix_pos)
   if (postfix_keys.length) {
-    text += '一共几只猫'
+    text += '一共有几只猫'
     let conjunctions = []
     for (let att in postfix_keys) {
       conjunctions.push(
@@ -124,7 +124,7 @@ var make_cats = function() {
       // ducks is just 'duck' when used as an adjective
     }
   } else {
-    text += '多少只猫咪呢'
+    text += '有多少只猫咪呢'
   }
   text += '?'
 
