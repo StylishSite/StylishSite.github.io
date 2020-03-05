@@ -11,7 +11,7 @@ Enjoy!
 
 ![贾斯纳的猫](./cats.png)
 
-### References
+### 参考
 
 感谢所有的反馈，来自 [Hacker News!](https://news.ycombinator.com/item?id=21880446#21886290)
 
